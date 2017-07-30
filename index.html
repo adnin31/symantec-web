@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Semantec Web</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+    integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+    <link href="https://maxcdn.bootstrapcdn.com/bootswatch/3.3.7/cosmo/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-h21C2fcDk/eFsW9sC9h0dhokq5pDinLNklTKoxIZRUn3+hvmgQSffLLQ4G4l2eEr" crossorigin="anonymous">
+    <!-- Custom styles for this template -->
+    <link href="bootstrap-social-gh-pages/bootstrap-social.css" rel="stylesheet">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+
+    <style>
+      .img-center {margin:0 auto;}
+      .jumbotron {
+        margin :0 ;
+      }
+      a.inline {
+    display:inline;
+    }
+    </style>
+  </head>
+  <body>
+    <nav class="navbar navbar-default navbar-fixed-top" style="padding-top :15px; padding-bottom : 15px ;background-color :#10B47D  ">
+      <div class="container-fluid">
+        <div class="navbar-header col-md-8">
+          <a class="navbar-brand" style="cursor:pointer; color:white;font-weight:900 ;font-size: 200%;" onclick="home()">Adnin Web</a>
+        </div>
+          <ul class="nav navbar-nav navbar-right col-md-4 text-center" >
+            <li class="" style="color:white;font-weight:900 ;font-size: 150%;"><a style="cursor:pointer" onclick="portofolio()">Portfolio</a></li>
+            <li class=" " style ="color:white;font-weight:900 ;font-size: 150%;" ><a style="cursor:pointer" onClick="about()">About</a></li>
+            <li class="" style="color:white;font-weight:900 ;font-size: 150%;"><a style="cursor:pointer" onClick="contact()">Contacts</a></li>
+          </ul>
+      </div>
+    </nav>
+    <br><br>
+    <div id="home" class="jumbotron " style="background:#3A9597;height: 570px;padding-top :200px" >
+      <img src="image/profile.jpg" class="img-responsive img-center img-circle"
+      style="width:150px;height:150px" alt="Profile">
+      <h1 class="text-center" style="color:white;font-weight:900">Welcome to my Page</h1>
+      <p class="text-center" style="color:white;font-weight:900">Still Learn develop some web ..</p>
+    </div>
+
+    <div id="portofolio" class="jumbotron" style="background:#DBD579 ;height: 570px ;padding-top:100px ;padding-bottom :20px">
+      <h1 class="text-center" style="color:white ;font-weight:900">PORTFOLIO</h1>
+      <div class="container text-center">
+          <div class="col-sm-6 ">
+            <a href="#"   ><h1>Movie Trailer</h1></a>
+            <a href="#" ><h1 >Todo List</h1></a>
+          </div>
+          <div class="col-sm-6 ">
+            <a href="#"><h1>Ngeltick</h1></a>
+            <a href="#"><h1 >Books Library</h1></a>
+          </div>
+      </div>
+    </div>
+
+
+    <div id="about" class="jumbotron" style="background:#3A9597 ;height: 570px ;padding-top:100px ;padding-bottom :20px">
+        <h1 class="text-center" style="color:white ;font-weight:900">About</h1>
+        <hr>
+          <div class="container text-center"  style="color:white; padding-left :17.5% ;padding-right :17.5%">
+            <p style="font-size:200%">Website ini dibuat untuk memenuhi tugas pembuatan symantec website yang ditugaskan pada hari jumat
+            28 agustus 2017</p>
+            <p style="font-size:200%">Website ini akan tersedia portofolio project yang dibuat oleh saya dan tim saya pada saat phase 2
+            </p>
+          </div>
+    </div>
+
+    <div id="contact" class="jumbotron" style="background:#686A92 ;height: 570px;padding-top:100px ;padding-bottom :20px">
+        <h1 class="text-center" style="color:white ;font-weight:900">Contact</h1>
+        <hr>
+          <div class="container"  style="color:white; padding-left :17.5% ;padding-right :17.5% ; text-align : center">
+              <h2 >You can contact me through my social media</h2>
+              <br>
+          <ul class="list-inline ">
+            <li>
+              <a href="https://www.facebook.com/adnin.rais"><img src="image/facebook.png" class="img-responsive img-center img-rounded"
+              style="width:50px;height:50px" alt="Profile"></a>
+            </li>
+            <li>
+              <a href="https://twitter.com/adnin_rais"><img src="image/twitter.png" class="img-responsive img-center img-rounded"
+              style="width:50px;height:50px" alt="Profile"></a>
+            </li>
+            <li>
+              <a href="https://www.instagram.com/adnin31/?hl=en"><img src="image/instagram.png" class="img-responsive img-center img-rounded"
+              style="width:50px;height:50px" alt="Profile"></a>
+            </li>
+            <li>
+              <a href="https://github.com/adnin31"><img src="image/github.png" class="img-responsive img-center img-rounded"
+              style="width:50px;height:50px" alt="Profile"></a>
+            </li>
+          </ul>
+          </div>
+    </div>
+
+    <script>
+      function home() {
+        let toHome =document.getElementById("home")
+        toHome.scrollIntoView()
+      }
+      function portofolio() {
+        let to =document.getElementById("portofolio")
+        to.scrollIntoView({block: 'end',  behaviour: 'smooth'})
+      }
+      function contact() {
+        let toContact = document.getElementById("contact")
+        toContact.scrollIntoView({block: 'end',  behaviour: 'smooth'})
+      }
+      function about() {
+        let toAbout=document.getElementById("about")
+        toAbout.scrollIntoView({block: 'end',  behaviour: 'smooth'})
+      }
+    </script>
+
+
+
+
+  </body>
+</html>
